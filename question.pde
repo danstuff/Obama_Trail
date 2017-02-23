@@ -1,8 +1,8 @@
 final int QSTN_X = 10;
 final int QSTN_Y = 310;
 
-final int QSTN_STEP = 20;
-final int QSTN_LINE = 32;
+final int QSTN_STEP = 21;
+final int QSTN_LINE = 20;
 
 AudioSample select, good, bad;
 
@@ -20,7 +20,7 @@ class Question {
   Question(String main_text, int main_text_lines, 
     StringList options, StringList consequences, int answer, int time) {
     this.main_text = main_text;
-    this.main_text_lines = main_text_lines-1;
+    this.main_text_lines = main_text_lines;
 
     this.options = options;
 
@@ -39,7 +39,7 @@ class Question {
 
     for (int i = 0; i < options.size(); i++) {
       if (options.get(i) != "") 
-        text(" "+(i+1)+")"+options.get(i), QSTN_X, QSTN_Y + QSTN_LINE*main_text_lines + QSTN_STEP*(i+1));
+        text((i+1)+")"+options.get(i), QSTN_X+5, QSTN_Y + QSTN_LINE*main_text_lines + QSTN_STEP*(i+1));
     }
   }
 
@@ -75,12 +75,15 @@ class Question {
       good.trigger();
 
       //heal the lowest person
-      if (obama.getHealth() < biden.getHealth()) {
+      if (obama.getHealth() < biden.getHealth() && !obama.noHealth()) {
         main_text += "\nOBAMA";
         obama.heal();
-      } else {
+      } else if (!biden.noHealth()) {
         main_text += "\nBIDEN";
         biden.heal();
+      } else if (!obama.noHealth()) {
+        main_text += "\nOBAMA";
+        obama.heal();
       }
 
       main_text += " gains health!";

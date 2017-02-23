@@ -78,8 +78,7 @@ class Person {
     } else {
       //dead head and name on stats bar
       image(head_dead, STAT_X + STAT_SIZE*position, STAT_Y);
-
-      text(name, STAT_X + STAT_SIZE*position + HEAD_SIZE, STAT_Y);
+      text(name, STAT_X + STAT_SIZE*position + HEAD_SIZE, STAT_Y + 10);
     }
   }
 
@@ -96,7 +95,7 @@ class Person {
   }
 
   boolean hurt() {
-    health -= round(random(25, 50));
+    health -= round(random(40, 60));
 
     if (health <= 0)
       return true;
@@ -105,7 +104,7 @@ class Person {
   }
 
   void heal() {
-    health += round(random(25, 50));
+    health += round(random(20, 30));
 
     if (health > 100)
       health = 100;
