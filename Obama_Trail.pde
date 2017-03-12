@@ -63,8 +63,10 @@ void setup() {
 
   questions.add(new Question("Welcome to OBAMA TRAIL!\n\n"+
                              "Make it to the end by responding to the\n"+
-                             "situations just like Obama would.\n\n"+
-                             "Good luck!",
+                             "situations just like Obama would. Good luck!\n\n"+
+                             "Programming by Dan Yost. Writing by\n"+
+                             "Kami Beckford, Myia Samuels, and Mateo\n"+
+                             "Ginocchi.",
                              4, null, null, 0, 0));
 
   //1
@@ -222,41 +224,41 @@ void setup() {
                              2, null, null, 0, 684));
 
   //10
-  StringList slq_10 = new StringList();
-  slq_10.append("Draft a bill to reform the immigration system.");
-  slq_10.append("Issue an executive order.");
-  slq_10.append("Alter the process of becoming a U.S. citizen.");
-  slq_10.append("Change and retry the DREAM-Act in Congress.");
+  //StringList slq_10 = new StringList();
+  //slq_10.append("Draft a bill to reform the immigration system.");
+  //slq_10.append("Issue an executive order.");
+  //slq_10.append("Alter the process of becoming a U.S. citizen.");
+  //slq_10.append("Change and retry the DREAM-Act in Congress.");
 
-  StringList slc_10 = new StringList();
-  slc_10.append("FAIL- It is very unlikely that Congress will be\n"+
-                "able to settle on an agreement in a timely\n"+
-                "manner, and it does not ensure that you will see\n"+
-                "the changes you want.");
-  slc_10.append("Good choice! You created a policy called the\n"+
-                "Deferred Action for Childhood Arrivals (DACA)\n"+
-                "in June 2012.");
-  slc_10.append("FAIL- Changing the citizenship process will take\n"+
-                "too much time, and may even cause more problems\n"+
-                "before solving the initial problem you wanted\n"+
-                "to find a solution to.");
-  slc_10.append("FAIL- After the bill has failed multiple times,\n"+
-                "there is no point in trying to continue with\n"+
-                "something that isn’t going to work.");
+  //StringList slc_10 = new StringList();
+  //slc_10.append("FAIL- It is very unlikely that Congress will be\n"+
+  //              "able to settle on an agreement in a timely\n"+
+  //              "manner, and it does not ensure that you will see\n"+
+  //              "the changes you want.");
+  //slc_10.append("Good choice! You created a policy called the\n"+
+  //              "Deferred Action for Childhood Arrivals (DACA)\n"+
+  //              "in June 2012.");
+  //slc_10.append("FAIL- Changing the citizenship process will take\n"+
+  //              "too much time, and may even cause more problems\n"+
+  //              "before solving the initial problem you wanted\n"+
+  //              "to find a solution to.");
+  //slc_10.append("FAIL- After the bill has failed multiple times,\n"+
+  //              "there is no point in trying to continue with\n"+
+  //              "something that isn’t going to work.");
 
-  questions.add(new Question("You want to enforce a policy that will lessen\n"+
-                             "immigration enforcement from individuals who\n"+
-                             "act as good citizens. You will...",
-                             3, slq_10, slc_10, 2, 760));
+  //questions.add(new Question("You want to enforce a policy that will lessen\n"+
+  //                           "immigration enforcement from individuals who\n"+
+  //                           "act as good citizens. You will...",
+  //                           3, slq_10, slc_10, 2, 760));
   
   //11
   questions.add(new Question("MILESTONE: Congratulations! You’ve just been\n"+
                              "re-elected!",
-                             2, null, null, 0, 836));
+                             2, null, null, 0, 760));
                              
   //12
   StringList slq_12 = new StringList();
-  slq_12.append("Draft a bill to reform the US immigration system.");
+  slq_12.append("Draft a bill to reform US immigration system.");
   slq_12.append("Issue an executive order.");
   slq_12.append("Alter the process of becoming a U.S. citizen.");
   slq_12.append("Change and retry the DREAM-Act in Congress.");
@@ -280,7 +282,7 @@ void setup() {
   questions.add(new Question("You want to enforce a policy that will lessen\n"+
                              "immigration enforcement from individuals who\n"+
                              "act as good citizens. You will...",
-                             3, slq_12, slc_12, 2, 912));
+                             3, slq_12, slc_12, 2, 836));
                              
   //13
   questions.add(new Question("MILESTONE: You successfully brokered a nuclear\n"+
@@ -288,7 +290,7 @@ void setup() {
                              "UN has agreed to lift the trade sanctions it\n"+
                              "imposed on Iran in 2010 and they are now \n"+
                              "shipping out oil.",
-                             5, null, null, 0, 988));
+                             5, null, null, 0, 912));
 
   questions.add(new Question("CONGRATULATIONS!\n\n"+
                              "You have successfully survived OBAMA TRAIL!\n\n"+
